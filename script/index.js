@@ -124,7 +124,7 @@ const optionHandler = () => {
     
     if (target.classList.contains('option__item')) {
       optionBtnOrder.textContent = target.textContent;
-      orderBy.value - target.dataset.sort;
+      orderBy.value = target.dataset.sort;
       const newData = sortData();
       renderCards(newData);
       optionListOrder.classList.remove('option__list_active');
